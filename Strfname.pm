@@ -4,7 +4,7 @@ use strict;
 require Exporter;
 use vars qw($VERSION @EXPORT @EXPORT_OK @ISA);
 
-$VERSION = "0.01";
+$VERSION = "0.02";
 @ISA = qw(Exporter);
 @EXPORT = qw(strfname);
 @EXPORT_OK = qw(strfname);
@@ -51,14 +51,14 @@ This module exports one function, strfname():
 The strfname function uses the formatting string passed in $format to format a
 person's name. The remaining arguments make up the name: last name, first name,
 middle name, prefix ('Mr.', 'Ms.', 'Dr.', etc.) and suffix ('Ph.D., 'MD', etc.).
-Up to five additional name parts may also be passed.
+Up to five additional names may also be passed.
 
 The formats are roughly based on the ideas behind sprintf formatting or strftime
-formatting. Each format is denoted by a percent sign (%) and a single letter.
-The letter represents the data that will be filled in to the string. Any
-non-alphanumeric characters placed between the % and the conversion character
-will be included in the string B<only if> the data represented by the conversion
-character exists.
+formatting. Each format is denoted by a percent sign (%) and a single
+alpha-numeric character. The character represents the data that will be filled
+in to the string. Any non-alphanumeric characters placed between the % and the
+conversion character will be included in the string B<only if> the data
+represented by the conversion character exists.
 
 For example, if I wanted to get a full name, but didn't have a middle name, I
 would specify a format string like so:
@@ -79,8 +79,10 @@ you need one, but only if you need one:
   strfname("%p% f% M% l%, s", 'Clinton', 'William', 'Jefferson', 'Mr.', 'JD');
 
 would yield 'Mr. William J. Clinton, JD', but if there is no suffix (delete 'JD'
-from the call above), it yeilds 'Mr. William E. Clinton'. Here are the supported
-formats:
+from the call above), it yeilds 'Mr. William J. Clinton', leaving off the comma
+that would preceed the suffix, if it existed.
+
+Here are the supported formats:
 
   %l Last Name
   %f First Name
