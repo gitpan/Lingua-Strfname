@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: Lingua-Strfname
-version: 0.03
+version: 0.10
 license: perl
 distribution_type: module
 requires: {}
@@ -10,5 +10,5 @@ conflicts: {}
 provides:
   Lingua::Strfname:
     file: lib/Lingua/Strfname.pm
-    version: 0.03
-generated_by: Module::Build version 0.19_05
+    version: 0.10
+generated_by: Module::Build version 0.20
