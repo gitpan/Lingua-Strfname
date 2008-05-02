@@ -4,7 +4,7 @@ use strict;
 require Exporter;
 use vars qw($VERSION @EXPORT @EXPORT_OK @ISA);
 
-$VERSION = "0.10";
+$VERSION = '0.11';
 @ISA = qw(Exporter);
 @EXPORT = @EXPORT_OK = qw(strfname);
 
@@ -114,14 +114,23 @@ Here are the supported formats:
   %4 Extra Name 4 Initial
   %5 Extra Name 5 Initial
 
+=head1 SUPPORT
+
+This module is stored in an open repository at the following address:
+
+L<https://svn.kineticode.com/Lingua-Strfname/trunk/>
+
+Patches against SVN::Notify are welcome. Please send bug reports to
+<bug-lingua-strfname@rt.cpan.org>.
+
 =head1 AUTHOR
 
-David Wheeler <david@wheeler.net>, with implementation assistance from David
-Lowe.
+David Wheeler <david@kineticode.com>, with implementation assistance from
+David Lowe.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2000-2003, David Wheeler. All Rights Reserved.
+Copyright (c) 2000-2008, David Wheeler. All Rights Reserved.
 
 This module is free software; you can redistribute it and/or modify it under the
 same terms as Perl itself.
