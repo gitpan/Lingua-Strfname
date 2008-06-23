@@ -1,4 +1,4 @@
-Lingua/Strfname version 0.11
+Lingua/Strfname version 0.12
 ============================
 
 This module exports a single function, strfname(), that may be used to format
@@ -26,7 +26,7 @@ Perl.
 
 COPYRIGHT AND LICENCE
 
-Copyright (c) 2000-2003, David Wheeler. All Rights Reserved.
+Copyright (c) 2000-2008, David Wheeler. Some Rights Reserved.
 
-This module is free software; you can redistribute it and/or modify it under the
-same terms as Perl itself.
+This module is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
