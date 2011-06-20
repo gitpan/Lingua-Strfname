@@ -5,7 +5,7 @@ require 5.006;
 require Exporter;
 use vars qw($VERSION @EXPORT @EXPORT_OK @ISA);
 
-$VERSION = '0.12';
+$VERSION = '0.13';
 @ISA = qw(Exporter);
 @EXPORT = @EXPORT_OK = qw(strfname);
 
@@ -117,21 +117,22 @@ Here are the supported formats:
 
 =head1 SUPPORT
 
-This module is stored in an open repository at the following address:
+This module is stored in an open L<GitHub
+repository|http://github.com/theory/lingua-strfname/>. Feel free to fork and
+contribute!
 
-L<https://svn.kineticode.com/Lingua-Strfname/trunk/>
-
-Patches against Lingua::Strfname are welcome. Please send bug reports to
-<bug-lingua-strfname@rt.cpan.org>.
+Please file bug reports via L<GitHub
+Issues|http://github.com/theory/lingua-strfname/issues/> or by sending mail to
+L<bug-Lingua-Strfname.cpan.org|mailto:bug-Lingua-Strfname.cpan.org>.
 
 =head1 AUTHOR
 
-David Wheeler <david@kineticode.com>, with implementation assistance from
+David E. Wheeler <david@justatheory.com>, with implementation assistance from
 David Lowe.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2000-2008, David Wheeler. Some Rights Reserved.
+Copyright (c) 2000-2011, David E. Wheeler. Some Rights Reserved.
 
 This module is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
